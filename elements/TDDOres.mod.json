@@ -1,0 +1,11 @@
+{
+  "_fv": 8,
+  "_type": "tab",
+  "definition": {
+    "name": "TDD Ores",
+    "icon": {
+      "value": "Blocks.SMOOTH_STONE"
+    },
+    "showSearch": true
+  }
+}
