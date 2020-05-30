@@ -2,15 +2,6 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "DescentiumOre",
-      "type": "block",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "descentium_ore"
-    },
-    {
       "name": "LatrouciumOre",
       "type": "block",
       "sortid": 2,
@@ -60,7 +51,6 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.the_descending_dimensions.descentium_ore": "Descentium Ore",
       "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
       "itemGroup.tabtdd_ores": "TDD Ores",
       "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
