@@ -1,8 +1,8 @@
 {
   "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
   "itemGroup.tabtdd_ores": "TDD Ores",
+  "block.the_descending_dimensions.descentium_ore": "Descentium Ore",
   "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
   "block.the_descending_dimensions.kilithinite_ore": "Kilithinite Ore",
-  "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore",
-  "block.the_descending_dimensions.descentiumore": "Descentiumore"
+  "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore"
 }
