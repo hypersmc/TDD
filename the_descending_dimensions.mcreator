@@ -45,6 +45,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tdd_ores"
+    },
+    {
+      "name": "Descentiumore",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "descentiumore"
     }
   ],
   "variable_elements": [],
@@ -55,7 +64,8 @@
       "itemGroup.tabtdd_ores": "TDD Ores",
       "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
       "block.the_descending_dimensions.kilithinite_ore": "Kilithinite Ore",
-      "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore"
+      "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore",
+      "block.the_descending_dimensions.descentiumore": "Descentiumore"
     }
   },
   "workspaceSettings": {
