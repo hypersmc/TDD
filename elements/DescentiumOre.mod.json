@@ -22,8 +22,8 @@
     "Mz": 1.0,
     "name": "Descentium Ore",
     "specialInfo": [],
-    "hardness": 5.0,
-    "resistance": 1000.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:TDDOres"
@@ -57,11 +57,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -79,18 +79,16 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.BEDROCK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 3,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 2,
-    "maxGenerateHeight": 5
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
