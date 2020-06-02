@@ -51,6 +51,8 @@ public class TheDescendingDimensionsModElements {
 	public final List<Supplier<EntityType<?>>> entities = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public TheDescendingDimensionsModElements() {
+		sounds.put(new ResourceLocation("the_descending_dimensions", "bedrockbreaker"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("the_descending_dimensions", "bedrockbreaker")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("the_descending_dimensions").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

@@ -1,1 +1,11 @@
-{}
+{
+  "bedrockbreaker": {
+    "category": "block",
+    "sounds": [
+      {
+        "name": "the_descending_dimensions:bedrockbreaker",
+        "stream": false
+      }
+    ]
+  }
+}

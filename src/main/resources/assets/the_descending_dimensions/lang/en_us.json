@@ -1,8 +1,17 @@
 {
-  "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
   "itemGroup.tabtdd_ores": "TDD Ores",
   "block.the_descending_dimensions.descentium_ore": "Descentium Ore",
-  "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
+  "block.the_descending_dimensions.ditherrack": "Brimstone",
+  "itemGroup.tabttd_items": "TDD Items",
+  "item.the_descending_dimensions.bedrock_breaker": "Bedrock Breaker",
+  "itemGroup.tabtt_dblocks": "TDD Blocks",
+  "item.the_descending_dimensions.bedrock_shard": "Bedrock Shard",
   "block.the_descending_dimensions.kilithinite_ore": "Kilithinite Ore",
-  "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore"
+  "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore",
+  "item.the_descending_dimensions.descentium_gemstone": "Descentium Gemstone",
+  "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
+  "item.the_descending_dimensions.bedrock_slag": "Bedrock Slag",
+  "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
+  "item.the_descending_dimensions.brimstone_pits": "Brimstone Pits Portal Igniter",
+  "itemGroup.tabtdd_tools": "TDD Tools"
 }

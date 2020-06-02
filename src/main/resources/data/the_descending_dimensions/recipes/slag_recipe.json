@@ -1,0 +1,12 @@
+{
+  "group": "the_descending_dimensions",
+  "type": "minecraft:smelting",
+  "experience": 20,
+  "cookingtime": 2000,
+  "ingredient": {
+    "item": "the_descending_dimensions:bedrock_shard"
+  },
+  "result": {
+    "item": "the_descending_dimensions:bedrock_slag"
+  }
+}

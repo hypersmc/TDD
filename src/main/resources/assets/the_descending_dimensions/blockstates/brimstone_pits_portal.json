@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "the_descending_dimensions:block/brimstone_pits_portal_ew"
+    },
+    "axis=x": {
+      "model": "the_descending_dimensions:block/brimstone_pits_portal_ns"
+    }
+  }
+}
