@@ -22,7 +22,7 @@
     "Mz": 1.0,
     "name": "Descentium Ore",
     "specialInfo": [],
-    "hardness": 5.0,
+    "hardness": 10.0,
     "resistance": 1000.0,
     "hasGravity": false,
     "creativeTab": {

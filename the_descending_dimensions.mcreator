@@ -260,6 +260,15 @@
       "registry_name": "electric_furnace_core_block"
     },
     {
+      "name": "Test",
+      "type": "block",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test"
+    },
+    {
       "name": "ElectricFurnaceCoreBlockTop1",
       "type": "block",
       "sortid": 24,
@@ -269,16 +278,464 @@
       "registry_name": "electric_furnace_core_block_top_1"
     },
     {
-      "name": "Test",
+      "name": "EFurnaceOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidPortalEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "void_portal_entity_collides_in_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "VoidlandsPlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "voidlands_player_enters_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EFurnaceUpdateTick",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Bedrockbreak1",
+      "type": "block",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bedrockbreak_1"
+    },
+    {
+      "name": "HeatSand",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heat_sand"
+    },
+    {
+      "name": "LimboPortal",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "limbo_portal"
+    },
+    {
+      "name": "Bedrockbreak2",
+      "type": "block",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bedrockbreak_2"
+    },
+    {
+      "name": "Bedrockbreak3",
+      "type": "block",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bedrockbreak_3"
+    },
+    {
+      "name": "TDDRenderType",
+      "type": "code",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "tdd_render_type"
+    },
+    {
+      "name": "InferniumOre",
+      "type": "block",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "infernium_ore"
+    },
+    {
+      "name": "EFurnaceFiller",
+      "type": "block",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_filler"
+    },
+    {
+      "name": "EFurnace",
+      "type": "block",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace"
+    },
+    {
+      "name": "EFurnaceFillerUpdateTick",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_filler_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EFurnSlot1Changed",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furn_slot_1_changed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EFurnaceFillerOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_filler_on_block_right_clicked",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "HeatSandEntityWalksOnTheBlock",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heat_sand_entity_walks_on_the_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FurnaceCasing",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "furnace_casing"
+    },
+    {
+      "name": "Voidlands",
+      "type": "dimension",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "voidlands"
+    },
+    {
+      "name": "EFurnSlot0changed",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furn_slot_0changed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimboPortalTile",
+      "type": "code",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "limbo_portal_tile"
+    },
+    {
+      "name": "EFurnaceGui",
+      "type": "gui",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "e_furnace_gui"
+    },
+    {
+      "name": "HeatingElement",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heating_element"
+    },
+    {
+      "name": "WeatheredBedrock",
+      "type": "block",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "weathered_bedrock"
+    },
+    {
+      "name": "HeatingElementOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "heating_element_on_block_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "direction",
+            "type": "direction"
+          },
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimboportalTileRenderer",
+      "type": "code",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "limboportal_tile_renderer"
+    },
+    {
+      "name": "VoidPortal",
+      "type": "block",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": true,
+      "ids": {},
+      "registry_name": "void_portal"
+    },
+    {
+      "name": "BedrockCore",
       "type": "block",
       "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "test"
+      "registry_name": "bedrock_core"
+    },
+    {
+      "name": "TheVoid",
+      "type": "biome",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_void"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "EfurnaceZ",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "EfurnaceY",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "EfurnaceX",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "ItemChanged",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "coreblockfoundamount",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "efurnacefacing",
+      "type": "string",
+      "scope": "map",
+      "value": ""
+    }
+  ],
   "sound_elements": [
     {
       "name": "bedrockbreaker",
@@ -288,25 +745,23 @@
   ],
   "language_map": {
     "en_us": {
-      "itemGroup.tabtdd_ores": "TDD Ores",
       "block.the_descending_dimensions.descentium_ore": "Descentium Ore",
       "block.the_descending_dimensions.ditherrack": "Brimstone",
-      "itemGroup.tabttd_items": "TDD Items",
       "item.the_descending_dimensions.bedrock_breaker": "Bedrock Breaker",
       "itemGroup.tabtt_dblocks": "TDD Blocks",
-      "item.the_descending_dimensions.bedrock_shard": "Bedrock Shard",
-      "block.the_descending_dimensions.test": "Test",
+      "block.the_descending_dimensions.limbo_portal": "Limbo Portal",
       "block.the_descending_dimensions.kilithinite_ore": "Kilithinite Ore",
+      "item.the_descending_dimensions.bedrock_slag": "Bedrock Slag",
+      "item.the_descending_dimensions.brimstone_pits": "Brimstone Pits Portal Igniter",
+      "block.the_descending_dimensions.void_portal": "Void Rift",
+      "itemGroup.tabtdd_ores": "TDD Ores",
+      "itemGroup.tabttd_items": "TDD Items",
+      "item.the_descending_dimensions.bedrock_shard": "Bedrock Shard",
       "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore",
-      "block.the_descending_dimensions.electric_furnace_core_block_top_1": "Electric Furnace Core Block Top 1",
       "item.the_descending_dimensions.descentium_gemstone": "Descentium Gemstone",
       "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
-      "item.the_descending_dimensions.bedrock_slag": "Bedrock Slag",
-      "block.the_descending_dimensions.electric_furnace_filler": "Electric Furnace Filler",
       "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
-      "item.the_descending_dimensions.brimstone_pits": "Brimstone Pits Portal Igniter",
-      "itemGroup.tabtdd_tools": "TDD Tools",
-      "block.the_descending_dimensions.electric_furnace_core_block": "Electric Furnace Core Block"
+      "itemGroup.tabtdd_tools": "TDD Tools"
     }
   },
   "workspaceSettings": {

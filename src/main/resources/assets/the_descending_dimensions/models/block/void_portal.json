@@ -1,0 +1,9 @@
+{
+  "parent": "the_descending_dimensions:custom/voidportal",
+  "textures": {
+    "all": "the_descending_dimensions:blocks/strangebedrock",
+    "particle": "the_descending_dimensions:blocks/strangebedrock",
+    "0": "the_descending_dimensions:blocks/strangebedrock",
+    "1": "the_descending_dimensions:blocks/voidportal"
+  }
+}

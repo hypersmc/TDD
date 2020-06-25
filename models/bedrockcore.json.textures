@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bluefire",
+        "1": "inferniumorb",
+        "2": "bedrock",
+        "3": "inferniumbeam"
+      },
+      "name": "default"
+    }
+  }
+}

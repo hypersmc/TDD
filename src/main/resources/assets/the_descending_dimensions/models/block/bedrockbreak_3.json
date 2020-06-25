@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_descending_dimensions:blocks/strangebedrock",
+    "up": "the_descending_dimensions:blocks/bcoredestroy3",
+    "north": "the_descending_dimensions:blocks/strangebedrock",
+    "east": "the_descending_dimensions:blocks/strangebedrock",
+    "south": "the_descending_dimensions:blocks/strangebedrock",
+    "west": "the_descending_dimensions:blocks/strangebedrock",
+    "particle": "the_descending_dimensions:blocks/strangebedrock"
+  }
+}

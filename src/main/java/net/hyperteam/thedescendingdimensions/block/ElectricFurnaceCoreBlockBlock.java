@@ -1,43 +1,17 @@
 
 package net.hyperteam.thedescendingdimensions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Direction;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.hyperteam.thedescendingdimensions.itemgroup.TDDOresItemGroup;
-import net.hyperteam.thedescendingdimensions.TheDescendingDimensionsModElements;
-
-import java.util.List;
-import java.util.Collections;
 
 @TheDescendingDimensionsModElements.ModElement.Tag
 public class ElectricFurnaceCoreBlockBlock extends TheDescendingDimensionsModElements.ModElement {
+
 	@ObjectHolder("the_descending_dimensions:electric_furnace_core_block")
 	public static final Block block = null;
+
 	public ElectricFurnaceCoreBlockBlock(TheDescendingDimensionsModElements instance) {
 		super(instance, 23);
+
 	}
 
 	@Override
@@ -51,11 +25,18 @@ public class ElectricFurnaceCoreBlockBlock extends TheDescendingDimensionsModEle
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
+
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(
+
+					Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+
 			setRegistryName("electric_furnace_core_block");
 		}
 
@@ -94,5 +75,7 @@ public class ElectricFurnaceCoreBlockBlock extends TheDescendingDimensionsModEle
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
+
 	}
+
 }

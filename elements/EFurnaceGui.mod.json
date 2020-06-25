@@ -1,0 +1,53 @@
+{
+  "_fv": 8,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "onSlotChanged": {
+            "name": "EFurnSlot0changed"
+          },
+          "onTakenFromSlot": {
+            "name": "EFurnSlot0changed"
+          },
+          "onStackTransfer": {
+            "name": "EFurnSlot0changed"
+          },
+          "name": "Slot #0",
+          "x": 372,
+          "y": 132
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "onSlotChanged": {
+            "name": "EFurnSlot0changed"
+          },
+          "onTakenFromSlot": {
+            "name": "EFurnSlot1Changed"
+          },
+          "onStackTransfer": {
+            "name": "EFurnSlot1Changed"
+          },
+          "name": "Slot #1",
+          "x": 444,
+          "y": 132
+        }
+      }
+    ]
+  }
+}

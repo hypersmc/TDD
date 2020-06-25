@@ -1,21 +1,19 @@
 {
-  "itemGroup.tabtdd_ores": "TDD Ores",
+  "block.the_descending_dimensions.void_portal": "Void Rift",
   "block.the_descending_dimensions.descentium_ore": "Descentium Ore",
+  "itemGroup.tabtdd_ores": "TDD Ores",
   "block.the_descending_dimensions.ditherrack": "Brimstone",
   "itemGroup.tabttd_items": "TDD Items",
   "item.the_descending_dimensions.bedrock_breaker": "Bedrock Breaker",
   "itemGroup.tabtt_dblocks": "TDD Blocks",
+  "block.the_descending_dimensions.limbo_portal": "Limbo Portal",
   "item.the_descending_dimensions.bedrock_shard": "Bedrock Shard",
-  "block.the_descending_dimensions.test": "Test",
   "block.the_descending_dimensions.kilithinite_ore": "Kilithinite Ore",
   "block.the_descending_dimensions.truthitonium_ore": "Truthitonium Ore",
-  "block.the_descending_dimensions.electric_furnace_core_block_top_1": "Electric Furnace Core Block Top 1",
   "item.the_descending_dimensions.descentium_gemstone": "Descentium Gemstone",
   "block.the_descending_dimensions.transtorium_ore": "Transtorium Ore",
   "item.the_descending_dimensions.bedrock_slag": "Bedrock Slag",
-  "block.the_descending_dimensions.electric_furnace_filler": "Electric Furnace Filler",
   "block.the_descending_dimensions.latroucium_ore": "Latroucium Ore",
   "item.the_descending_dimensions.brimstone_pits": "Brimstone Pits Portal Igniter",
-  "itemGroup.tabtdd_tools": "TDD Tools",
-  "block.the_descending_dimensions.electric_furnace_core_block": "Electric Furnace Core Block"
+  "itemGroup.tabtdd_tools": "TDD Tools"
 }

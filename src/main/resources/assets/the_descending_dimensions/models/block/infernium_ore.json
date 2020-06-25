@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "the_descending_dimensions:blocks/ditherrack",
+    "up": "the_descending_dimensions:blocks/ditherrack",
+    "north": "the_descending_dimensions:blocks/inferniumore",
+    "east": "the_descending_dimensions:blocks/inferniumore",
+    "south": "the_descending_dimensions:blocks/inferniumore",
+    "west": "the_descending_dimensions:blocks/inferniumore",
+    "particle": "the_descending_dimensions:blocks/ditherrack"
+  }
+}

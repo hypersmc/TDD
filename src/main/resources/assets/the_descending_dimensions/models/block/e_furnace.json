@@ -1,0 +1,9 @@
+{
+  "parent": "the_descending_dimensions:custom/efurnace",
+  "textures": {
+    "all": "the_descending_dimensions:blocks/iron_block",
+    "particle": "the_descending_dimensions:blocks/iron_block",
+    "0": "the_descending_dimensions:blocks/efurnacecasing",
+    "1": "the_descending_dimensions:blocks/iron_block"
+  }
+}

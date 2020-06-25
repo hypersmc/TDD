@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "strangebedrock",
+        "1": "voidportal"
+      },
+      "name": "default"
+    }
+  }
+}
