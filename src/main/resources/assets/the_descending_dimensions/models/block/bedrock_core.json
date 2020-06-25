@@ -1,0 +1,11 @@
+{
+  "parent": "the_descending_dimensions:custom/bedrockcore",
+  "textures": {
+    "all": "the_descending_dimensions:blocks/bedrock",
+    "particle": "the_descending_dimensions:blocks/bedrock",
+    "0": "the_descending_dimensions:blocks/bluefire",
+    "1": "the_descending_dimensions:blocks/inferniumorb",
+    "2": "the_descending_dimensions:blocks/bedrock",
+    "3": "the_descending_dimensions:blocks/inferniumbeam"
+  }
+}

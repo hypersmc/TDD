@@ -55,6 +55,12 @@ public class TheDescendingDimensionsModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "the_descending_dimensions_mapvars";
+		public double EfurnaceX = 0;
+		public double EfurnaceY = 0;
+		public double EfurnaceZ = 0;
+		public String efurnacefacing = "";
+		public boolean ItemChanged = false;
+		public double coreblockfoundamount = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -65,10 +71,22 @@ public class TheDescendingDimensionsModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			EfurnaceX = nbt.getDouble("EfurnaceX");
+			EfurnaceY = nbt.getDouble("EfurnaceY");
+			EfurnaceZ = nbt.getDouble("EfurnaceZ");
+			efurnacefacing = nbt.getString("efurnacefacing");
+			ItemChanged = nbt.getBoolean("ItemChanged");
+			coreblockfoundamount = nbt.getDouble("coreblockfoundamount");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putDouble("EfurnaceX", EfurnaceX);
+			nbt.putDouble("EfurnaceY", EfurnaceY);
+			nbt.putDouble("EfurnaceZ", EfurnaceZ);
+			nbt.putString("efurnacefacing", efurnacefacing);
+			nbt.putBoolean("ItemChanged", ItemChanged);
+			nbt.putDouble("coreblockfoundamount", coreblockfoundamount);
 			return nbt;
 		}
 

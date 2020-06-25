@@ -2,7 +2,7 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "descentiumore",
+    "texture": "heatsand",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -20,15 +20,15 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Descentium Ore",
+    "name": "Heat Sand",
     "specialInfo": [],
-    "hardness": 10.0,
-    "resistance": 1000.0,
-    "hasGravity": false,
+    "hardness": 1.0,
+    "resistance": 10.0,
+    "hasGravity": true,
     "creativeTab": {
       "value": "CUSTOM:TDDOres"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "shovel",
     "customDrop": {
       "value": ""
     },
@@ -57,11 +57,11 @@
     "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "GROUND"
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -79,18 +79,19 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "onEntityWalksOn": {
+      "name": "HeatSandEntityWalksOnTheBlock"
+    },
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.BEDROCK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 3,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 2,
-    "maxGenerateHeight": 5
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

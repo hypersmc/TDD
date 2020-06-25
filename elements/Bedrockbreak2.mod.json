@@ -2,14 +2,14 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "descentiumore",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "strangebedrock",
+    "textureTop": "bcoredestroy2",
+    "textureLeft": "strangebedrock",
+    "textureFront": "strangebedrock",
+    "textureRight": "strangebedrock",
+    "textureBack": "strangebedrock",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "hasTransparency": false,
     "connectedSides": false,
@@ -20,15 +20,15 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Descentium Ore",
+    "name": "Bedrockbreak 2",
     "specialInfo": [],
-    "hardness": 10.0,
-    "resistance": 1000.0,
+    "hardness": 1.0,
+    "resistance": 10000.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "CUSTOM:TDDOres"
+      "value": "No creative tab entry"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
@@ -60,8 +60,8 @@
       "value": "STONE"
     },
     "luminance": 0.0,
-    "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "unbreakable": true,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -79,18 +79,16 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.BEDROCK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 3,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 2,
-    "maxGenerateHeight": 5
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }

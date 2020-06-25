@@ -2,14 +2,14 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "descentiumore",
-    "textureTop": "",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
+    "texture": "ditherrack",
+    "textureTop": "ditherrack",
+    "textureLeft": "inferniumore",
+    "textureFront": "inferniumore",
+    "textureRight": "inferniumore",
+    "textureBack": "inferniumore",
+    "renderType": 10,
+    "customModelName": "Normal",
     "rotationMode": 0,
     "hasTransparency": false,
     "connectedSides": false,
@@ -20,10 +20,10 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Descentium Ore",
+    "name": "Infernium Ore",
     "specialInfo": [],
-    "hardness": 10.0,
-    "resistance": 1000.0,
+    "hardness": 4.0,
+    "resistance": 40.0,
     "hasGravity": false,
     "creativeTab": {
       "value": "CUSTOM:TDDOres"
@@ -59,9 +59,9 @@
     "soundOnStep": {
       "value": "STONE"
     },
-    "luminance": 0.0,
+    "luminance": 0.35000000000000003,
     "unbreakable": false,
-    "breakHarvestLevel": 3,
+    "breakHarvestLevel": 4,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -79,18 +79,16 @@
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
     "inventoryInSlotIDs": [],
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
       {
-        "value": "Blocks.BEDROCK"
+        "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 3,
-    "frequencyOnChunk": 5,
-    "minGenerateHeight": 2,
-    "maxGenerateHeight": 5
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
   }
 }
