@@ -2,15 +2,15 @@
   "_fv": 8,
   "_type": "block",
   "definition": {
-    "texture": "foundyou",
+    "texture": "master-texture",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
-    "renderType": 11,
-    "customModelName": "Single texture",
-    "rotationMode": 0,
+    "renderType": 2,
+    "customModelName": "furnace_cauldron:default",
+    "rotationMode": 1,
     "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -20,26 +20,24 @@
     "Mx": 1.0,
     "My": 1.0,
     "Mz": 1.0,
-    "name": "Electric Furnace Filler",
-    "specialInfo": [
-      "This is a filler block. So if you managed to get it please report it to the devs."
-    ],
+    "name": "Electric Furnace Core Block",
+    "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
     "hasGravity": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:TDDOres"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": false,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
       "value": "IRON"
     },
@@ -56,7 +54,7 @@
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
-    "reactionToPushing": "BLOCK",
+    "reactionToPushing": "NORMAL",
     "isNotColidable": false,
     "soundOnStep": {
       "value": "METAL"

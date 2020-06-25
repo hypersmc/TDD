@@ -1,0 +1,8 @@
+{
+  "parent": "the_descending_dimensions:custom/furnace_ring",
+  "textures": {
+    "all": "the_descending_dimensions:blocks/master-texture",
+    "particle": "the_descending_dimensions:blocks/master-texture",
+    "0": "the_descending_dimensions:blocks/master-texture"
+  }
+}

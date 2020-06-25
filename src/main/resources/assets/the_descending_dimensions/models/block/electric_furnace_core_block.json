@@ -1,0 +1,9 @@
+{
+  "parent": "the_descending_dimensions:custom/furnace_cauldron",
+  "textures": {
+    "all": "the_descending_dimensions:blocks/master-texture",
+    "particle": "the_descending_dimensions:blocks/master-texture",
+    "0": "the_descending_dimensions:blocks/master-texture",
+    "missing": "the_descending_dimensions:blocks/master-texture"
+  }
+}

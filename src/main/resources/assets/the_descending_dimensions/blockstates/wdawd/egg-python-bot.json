@@ -1,0 +1,36 @@
+{
+    "_comment": "DO NOT EDIT: FILE GENERATED AUTOMATICALLY BY PTERODACTYL PANEL - PTERODACTYL.IO",
+    "meta": {
+        "version": "PTDL_v1"
+    },
+    "exported_at": "2020-06-16T18:50:28+02:00",
+    "name": "Python Bot",
+    "author": "itznya10@gmail.com",
+    "description": "Python 3.6",
+    "image": "registry.gitlab.com\/lazarsn\/universal-bot:python3.6",
+    "startup": "python3 ${STARTUP_FILE}",
+    "config": {
+        "files": "{}",
+        "startup": "{\r\n    \"done\": \"\",\r\n    \"userInteraction\": []\r\n}",
+        "logs": "{}",
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "#!\/bin\/bash\r\napt -y update",
+            "container": "ubuntu:18.04",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Startup file",
+            "description": "Python",
+            "env_variable": "STARTUP_FILE",
+            "default_value": "index.py",
+            "user_viewable": 1,
+            "user_editable": 1,
+            "rules": "required|string|max:200"
+        }
+    ]
+}
