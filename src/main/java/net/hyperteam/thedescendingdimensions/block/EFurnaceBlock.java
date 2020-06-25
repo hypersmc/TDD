@@ -1,87 +1,20 @@
 
 package net.hyperteam.thedescendingdimensions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.items.wrapper.SidedInvWrapper;
-import net.minecraftforge.items.IItemHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.fml.network.NetworkHooks;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.world.server.ServerWorld;
-import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.math.BlockRayTraceResult;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.Rotation;
-import net.minecraft.util.NonNullList;
-import net.minecraft.util.Mirror;
-import net.minecraft.util.Hand;
-import net.minecraft.util.Direction;
-import net.minecraft.util.ActionResultType;
-import net.minecraft.tileentity.TileEntityType;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.tileentity.LockableLootTileEntity;
-import net.minecraft.state.StateContainer;
-import net.minecraft.state.DirectionProperty;
-import net.minecraft.network.play.server.SUpdateTileEntityPacket;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.network.NetworkManager;
-import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
-import net.minecraft.item.BlockItem;
-import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.inventory.ItemStackHelper;
-import net.minecraft.inventory.InventoryHelper;
-import net.minecraft.inventory.ISidedInventory;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.HorizontalBlock;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.hyperteam.thedescendingdimensions.procedures.EFurnaceUpdateTickProcedure;
-import net.hyperteam.thedescendingdimensions.procedures.EFurnaceOnBlockRightClickedProcedure;
-import net.hyperteam.thedescendingdimensions.gui.EFurnaceGuiGui;
-import net.hyperteam.thedescendingdimensions.TheDescendingDimensionsModElements;
-
-import javax.annotation.Nullable;
-
-import java.util.stream.IntStream;
-import java.util.Random;
-import java.util.List;
-import java.util.Collections;
-
-import io.netty.buffer.Unpooled;
 
 @TheDescendingDimensionsModElements.ModElement.Tag
 public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement {
+
 	@ObjectHolder("the_descending_dimensions:e_furnace")
 	public static final Block block = null;
+
 	@ObjectHolder("the_descending_dimensions:e_furnace")
 	public static final TileEntityType<CustomTileEntity> tileEntityType = null;
+
 	public EFurnaceBlock(TheDescendingDimensionsModElements instance) {
 		super(instance, 31);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -101,11 +34,18 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+
 	public static class CustomBlock extends Block {
+
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+			super(
+
+					Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).lightValue(0).notSolid());
+
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+
 			setRegistryName("e_furnace");
 		}
 
@@ -180,6 +120,7 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+
 				EFurnaceUpdateTickProcedure.executeProcedure($_dependencies);
 			}
 			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, this.tickRate(world));
@@ -189,9 +130,11 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 		public ActionResultType onBlockActivated(BlockState state, World world, BlockPos pos, PlayerEntity entity, Hand hand,
 				BlockRayTraceResult hit) {
 			super.onBlockActivated(state, world, pos, entity, hand, hit);
+
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+
 			if (entity instanceof ServerPlayerEntity) {
 				NetworkHooks.openGui((ServerPlayerEntity) entity, new INamedContainerProvider() {
 					@Override
@@ -206,6 +149,7 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 					}
 				}, new BlockPos(x, y, z));
 			}
+
 			Direction direction = hit.getFace();
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
@@ -214,8 +158,10 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
+
 				EFurnaceOnBlockRightClickedProcedure.executeProcedure($_dependencies);
 			}
+
 			return ActionResultType.SUCCESS;
 		}
 
@@ -250,6 +196,7 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 					InventoryHelper.dropInventoryItems(world, pos, (CustomTileEntity) tileentity);
 					world.updateComparatorOutputLevel(pos, this);
 				}
+
 				super.onReplaced(state, world, pos, newState, isMoving);
 			}
 		}
@@ -267,10 +214,13 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 			else
 				return 0;
 		}
+
 	}
 
 	public static class CustomTileEntity extends LockableLootTileEntity implements ISidedInventory {
+
 		private NonNullList<ItemStack> stacks = NonNullList.<ItemStack>withSize(2, ItemStack.EMPTY);
+
 		protected CustomTileEntity() {
 			super(tileEntityType);
 		}
@@ -370,7 +320,9 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 		public boolean canExtractItem(int index, ItemStack stack, Direction direction) {
 			return true;
 		}
+
 		private final LazyOptional<? extends IItemHandler>[] handlers = SidedInvWrapper.create(this, Direction.values());
+
 		@Override
 		public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 			if (!this.removed && facing != null && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
@@ -384,5 +336,7 @@ public class EFurnaceBlock extends TheDescendingDimensionsModElements.ModElement
 			for (LazyOptional<? extends IItemHandler> handler : handlers)
 				handler.invalidate();
 		}
+
 	}
+
 }

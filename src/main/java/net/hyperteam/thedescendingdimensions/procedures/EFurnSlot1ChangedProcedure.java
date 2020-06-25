@@ -1,16 +1,11 @@
 package net.hyperteam.thedescendingdimensions.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.tileentity.TileEntity;
-import net.minecraft.block.BlockState;
-
-import net.hyperteam.thedescendingdimensions.TheDescendingDimensionsModElements;
-
 @TheDescendingDimensionsModElements.ModElement.Tag
 public class EFurnSlot1ChangedProcedure extends TheDescendingDimensionsModElements.ModElement {
+
 	public EFurnSlot1ChangedProcedure(TheDescendingDimensionsModElements instance) {
 		super(instance, 41);
+
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -30,10 +25,12 @@ public class EFurnSlot1ChangedProcedure extends TheDescendingDimensionsModElemen
 			System.err.println("Failed to load dependency world for procedure EFurnSlot1Changed!");
 			return;
 		}
+
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
+
 		if (!world.isRemote) {
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			TileEntity _tileEntity = world.getTileEntity(_bp);
@@ -42,5 +39,7 @@ public class EFurnSlot1ChangedProcedure extends TheDescendingDimensionsModElemen
 				_tileEntity.getTileData().putBoolean("changed1", (true));
 			world.notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
+
 	}
+
 }

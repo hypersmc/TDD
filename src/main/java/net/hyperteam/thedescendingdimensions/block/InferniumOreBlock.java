@@ -1,30 +1,17 @@
 
 package net.hyperteam.thedescendingdimensions.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
-
-import net.minecraft.world.storage.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.hyperteam.thedescendingdimensions.itemgroup.TDDOresItemGroup;
-import net.hyperteam.thedescendingdimensions.TheDescendingDimensionsModElements;
-
-import java.util.List;
-import java.util.Collections;
 
 @TheDescendingDimensionsModElements.ModElement.Tag
 public class InferniumOreBlock extends TheDescendingDimensionsModElements.ModElement {
+
 	@ObjectHolder("the_descending_dimensions:infernium_ore")
 	public static final Block block = null;
+
 	public InferniumOreBlock(TheDescendingDimensionsModElements instance) {
 		super(instance, 22);
+
 	}
 
 	@Override
@@ -32,10 +19,15 @@ public class InferniumOreBlock extends TheDescendingDimensionsModElements.ModEle
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(TDDOresItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
+
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 40f).lightValue(5).harvestLevel(4)
-					.harvestTool(ToolType.PICKAXE));
+			super(
+
+					Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(4f, 40f).lightValue(5).harvestLevel(4)
+							.harvestTool(ToolType.PICKAXE));
+
 			setRegistryName("infernium_ore");
 		}
 
@@ -46,5 +38,7 @@ public class InferniumOreBlock extends TheDescendingDimensionsModElements.ModEle
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
+
 	}
+
 }

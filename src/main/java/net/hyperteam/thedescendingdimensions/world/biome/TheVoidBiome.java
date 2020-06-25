@@ -1,23 +1,14 @@
 
 package net.hyperteam.thedescendingdimensions.world.biome;
 
-import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilderConfig;
-import net.minecraft.world.gen.surfacebuilders.SurfaceBuilder;
-import net.minecraft.world.biome.DefaultBiomeFeatures;
-import net.minecraft.world.biome.Biome;
-
-import net.hyperteam.thedescendingdimensions.block.WeatheredBedrockBlock;
-import net.hyperteam.thedescendingdimensions.TheDescendingDimensionsModElements;
+import net.minecraft.block.material.Material;
 
 @TheDescendingDimensionsModElements.ModElement.Tag
 public class TheVoidBiome extends TheDescendingDimensionsModElements.ModElement {
+
 	@ObjectHolder("the_descending_dimensions:the_void")
 	public static final CustomBiome biome = null;
+
 	public TheVoidBiome(TheDescendingDimensionsModElements instance) {
 		super(instance, 43);
 	}
@@ -30,17 +21,22 @@ public class TheVoidBiome extends TheDescendingDimensionsModElements.ModElement 
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 	}
+
 	static class CustomBiome extends Biome {
+
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.5f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.RAIN)
 					.category(Biome.Category.NONE).waterColor(-16777216).waterFogColor(-16777216)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(WeatheredBedrockBlock.block.getDefaultState(),
 							WeatheredBedrockBlock.block.getDefaultState(), WeatheredBedrockBlock.block.getDefaultState())));
+
 			setRegistryName("the_void");
+
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
+
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -60,5 +56,7 @@ public class TheVoidBiome extends TheDescendingDimensionsModElements.ModElement 
 		public int getSkyColor() {
 			return -16777216;
 		}
+
 	}
+
 }
